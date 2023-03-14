@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect} from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import axios from 'axios';
 
 export default function  Modalcust({show,setShow,handleClose,handleShow,id1}) {
-  const [id,setId]=useState('')
+  //const [id,setId]=useState('')
   useEffect(() => {
   
   }, [id1])

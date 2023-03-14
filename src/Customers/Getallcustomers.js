@@ -30,7 +30,7 @@ export default function Getallcustomers() {
   const [show, setShow] = useState(false);
   const [search,setSearch]=useState('');
   const [fetchcustomers,setFetchcustomers]=useState([])
-  const [_id,setId]=useState('')
+  // const [_id,setId]=useState('')
   const [deleteid,setdeleteId]=useState('')
   console.log(deleteid);
   useEffect(() => {

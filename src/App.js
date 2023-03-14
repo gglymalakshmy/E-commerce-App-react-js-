@@ -1,20 +1,24 @@
-import React from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Signup from './Sign-up/Signup';
-import Login from './Login/Login';
-import Home from './Home/Home';
-import Getallbooks from './Books/Getallbooks';
-import Addbook from './Books/Addbook';
-import Addsale from './Sales/Addsale';
-import Salelist from './Sales/Salelist';
+// import React from 'react';
+// import { BrowserRouter, Route, Routes } from 'react-router-dom';
+// import { Provider } from "react-redux";
+// import Store from './Store/Store'
+// import Home from './Home/Home';
 
 
-function App() {
-  return (
-    <div className="App">
-     
-    </div>
-  );
-}
 
-export default App;
+// function App() {
+//   return (
+//     <Provider Store={Store}>
+//      <BrowserRouter>
+//     <App />
+//     <Home/>
+//     </BrowserRouter>
+//   </Provider>
+
+
+   
+//   );
+// }
+
+// export default App;
+

@@ -9,7 +9,7 @@ import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
 import IconButton from '@mui/material/IconButton';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
-import { Badge, List, ListItemButton, ListItemIcon, ListItemText } from '@mui/material';
+import {  List, ListItemButton, ListItemIcon, ListItemText } from '@mui/material';
 import BookIcon from '@mui/icons-material/Book';
 import AddBoxOutlinedIcon from '@mui/icons-material/AddBoxOutlined';
 import AddShoppingCartOutlinedIcon from '@mui/icons-material/AddShoppingCartOutlined';
@@ -26,14 +26,17 @@ import ManIcon from '@mui/icons-material/Man';
 import Getallclient from '../Client/Getallclient';
 import Addclient from '../Client/Addclient';
 import MenuIcon from '@mui/icons-material/Menu';
-import NotificationsIcon from '@mui/icons-material/Notifications';
+//import NotificationsIcon from '@mui/icons-material/Notifications';
 import Addcustomers from '../Customers/Addcustomers';
 import Getallcustomers from '../Customers/Getallcustomers';
 import UpdateCustomer from '../Customers/UpdateCustomer'
 import Purchasebook from '../Books/Purchasebook';
 import ShopIcon from '@mui/icons-material/Shop';
-import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
+//import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import Placeorder from '../Books/Placeorder';
+import { Button } from 'react-bootstrap';
+//import { useDispatch } from "react-redux";
+//import { setLogout } from "../Store/Actions/Loginaction";
 // import Getallbooks from '../Books/Getallbooks';
 // import Login from '../Login/Login';
 // import App from '../App';
@@ -88,9 +91,24 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' 
 const mdTheme = createTheme();
 export default function Home() {
   const [open, setOpen] = React.useState(true);
+  // const [anchor,setAnchor]=React.useState(null);
+  // const nav = useNavigate();
+  // const dispatch = useDispatch();
   const toggleDrawer = () => {
     setOpen(!open);
   };
+  // const handleClose = () => {
+  //   setAnchor(null);
+  // };
+  // const logout = () => {
+  //   handleClose();
+  //   dispatch(setLogout());
+  //   localStorage.removeItem("isLoggedin");
+  //   localStorage.removeItem("loggedUser");
+  //   nav("/login");
+  // };
+
+
 
   return (
     <ThemeProvider theme={mdTheme}>
@@ -125,7 +143,9 @@ export default function Home() {
               Product Gallery
             </Typography>
             <IconButton color="inherit">
-            <h6>logout</h6>
+            <Button>logout</Button>
+              {/* <Button onClick={logout}>logout</Button> */}
+            {/* //<h6>logout</h6> */}
               {/* <Badge badgeContent={4} color="secondary"> */}
               {/* <Badge color="secondary">
                 <NotificationsIcon />

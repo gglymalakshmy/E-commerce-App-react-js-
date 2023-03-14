@@ -32,12 +32,6 @@ function Getallbooks() {
   const [show, setShow] = useState(false);
   const [search,setSearch]=useState('');
   const [fetchbooks,setFetchbooks]=useState([])
-  //const [book,setBook]=useState('')
-  // const [bookname,setBookname]=useState('')
-  // const [authorname,setAuthorname]=useState('')
-  // const [price,setPrice]=useState('')
-  // const [availability,setAvailability]=useState('')
-  const [_id,setId]=useState('')
   const [deleteid,setdeleteId]=useState('')
   console.log(deleteid);
   useEffect(() => {
